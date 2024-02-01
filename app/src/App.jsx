@@ -7,8 +7,7 @@ import {
   Navigate,
 } from "react-router-dom";
 
-
-import './App.css'
+import './App.css';
 
 
 function App() {
@@ -18,7 +17,10 @@ function App() {
     <div>
       <Layout>
         <div className='landingpage-container'>
-          
+          <div className="hero-container">
+            <p>Hello, I'm</p>
+            <div className="hero-text" style={{ fontFamily: 'CameraObsura, sans-serif'}} >Noah Burns</div>
+          </div>
         </div>
       </Layout>
     </div>
