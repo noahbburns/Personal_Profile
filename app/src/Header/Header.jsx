@@ -7,9 +7,9 @@ const Header = () => {
     <div className="header-container">
          
         <div className="header-links">
-            <NavLink className="link"> ABOUT </NavLink>
-            <NavLink className="link"> PORTFOLIO </NavLink>
-            <NavLink className="link"> CONTACT </NavLink>
+            <NavLink className="link"> About </NavLink>
+            <NavLink className="link"> Porfolio </NavLink>
+            <NavLink className="link"> Contact </NavLink>
         </div>
     </div>
   );
