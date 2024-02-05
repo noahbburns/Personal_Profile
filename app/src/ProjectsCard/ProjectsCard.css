@@ -1,0 +1,13 @@
+.card-container {
+    background-color: #fff;
+    height: 38rem;
+    border-radius: 1rem;
+    flex:1;
+    margin:1rem;
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+}
+
