@@ -13,14 +13,14 @@ import ProjectsCard from "./ProjectsCard/ProjectsCard.jsx";
 const App = () => {
 
   const realEstateWebsite = {
-    projectImg: "./assets/real-estate-website.svg",
+    projectImg: "./real-estate-website.png",
     projectTitle: "Real-Estate Web App",
     projectDescription: "A web app to explore available homes to rent or buy, among other functions.",
     projectTags: ["ReactJS", "NodeJS", "MySQL"],
   };
   
   const petAdoptionWebsite = {
-    projectImg: "./assets/pet-adoption-website.svg",
+    projectImg: "./pet-adoption-website.png",
     projectTitle: "Pet Adoption Website",
     projectDescription: "A simple website for pet adoption showcasing UI UX elements",
     projectTags: ["HTML", "CSS", "JavaScript", "PHP"],
