@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Righteous&family=Roboto&family=Varela+Round&display=swap');
 
+body::-webkit-scrollbar {
+    display: none;
+}
 
 * {
     margin: 0;
@@ -18,11 +21,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 
 }
 
 .hero-container {
-    background-color: bisque;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -167,7 +170,6 @@ body {
 }
 
 .projects-container-inner {
-    background-color: rgba(222, 184, 135, 0.151);
     width: 105rem;
     height: 40rem;
     border-radius: 1rem;

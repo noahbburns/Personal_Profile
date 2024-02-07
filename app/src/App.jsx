@@ -5,7 +5,6 @@ import Layout from './Layout/Layout';
 import locationIcon from "./assets/location.png";
 import FadeInOutText from './FadeInOutText/FadeInOutText';
 import { BrowserRouter as Router, NavLink } from "react-router-dom";
-import { SlowScrollComponent } from './SlowScroll/SlowScroll';
 import './App.css';
 import profileImage from "./assets/cat.jpeg"
 import ProjectsCard from "./ProjectsCard/ProjectsCard.jsx";
@@ -17,6 +16,8 @@ const App = () => {
     projectTitle: "Real-Estate Web App",
     projectDescription: "A web app to explore available homes to rent or buy, among other functions.",
     projectTags: ["ReactJS", "NodeJS", "MySQL"],
+    projectGitHub: "https://github.com/CedricLimAhTock/0verdrive-soen341projectF2023",
+    projectLink: ""
   };
   
   const petAdoptionWebsite = {
@@ -24,6 +25,8 @@ const App = () => {
     projectTitle: "Pet Adoption Website",
     projectDescription: "A simple website for pet adoption showcasing UI UX elements",
     projectTags: ["HTML", "CSS", "JavaScript", "PHP"],
+    projectGitHub: "https://github.com/noahbburns/Adoption-Website",
+    projectLink: "https://users.encs.concordia.ca/~n_burns/Pet-Adoption/home.php"
   };
   
   return (
