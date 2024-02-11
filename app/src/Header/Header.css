@@ -29,5 +29,6 @@
 }
 
 .link:hover {
-    border-bottom: 3px solid burlywood;
+    color: rgb(224, 190, 145);
+    
 }

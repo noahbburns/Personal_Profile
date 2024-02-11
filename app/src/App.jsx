@@ -4,9 +4,10 @@ import React from 'react';
 import Layout from './Layout/Layout';
 import locationIcon from "./assets/location.png";
 import FadeInOutText from './FadeInOutText/FadeInOutText';
-import { BrowserRouter as Router, NavLink } from "react-router-dom";
+import { BrowserRouter as Router, NavLink, Switch } from "react-router-dom";
 import './App.css';
 import profileImage from "./assets/cat.jpeg"
+//import Contact from "./Contact/Contact.jsx";
 import ProjectsCard from "./ProjectsCard/ProjectsCard.jsx";
 
 const App = () => {

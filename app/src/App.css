@@ -102,9 +102,10 @@ body {
     height: 110rem;
     margin-top: 180rem;
     position: relative;
-    border-radius: 1rem;
+    border-radius: 2rem;
     background-color: rgb(12, 13, 14);
     z-index: 1;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
 }
 
 .about-container {
