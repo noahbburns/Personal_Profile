@@ -2,12 +2,12 @@
 
 import React from 'react';
 import Layout from './Layout/Layout';
-import locationIcon from "./assets/location.png";
+import locationIcon from "./assets/location.svg";
 import FadeInOutText from './FadeInOutText/FadeInOutText';
-import { BrowserRouter as Router, NavLink, Switch } from "react-router-dom";
+import { BrowserRouter as Router, NavLink } from "react-router-dom";
 import './App.css';
-import profileImage from "./assets/cat.jpeg"
-//import Contact from "./Contact/Contact.jsx";
+import profileImage from "./assets/cat.jpeg";
+import Contact from './Contact/Contact';
 import ProjectsCard from "./ProjectsCard/ProjectsCard.jsx";
 
 const App = () => {
@@ -45,7 +45,7 @@ const App = () => {
               <FadeInOutText text="A third-year Software Engineering student at Concordia University" additionalClass="hero-small-about" />
             </div>
             <div className="content-container">
-              <div className="about-container">
+              <div id = "about" className="about-container">
                 <div className="about-title">ABOUT ME</div>
                 <div className="about-image">
                   <img className="portrait" src={profileImage}></img>
@@ -54,7 +54,7 @@ const App = () => {
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla aliquam eum molestias blanditiis, quis rerum. Deleniti doloribus aspernatur repellendus eligendi alias. Voluptates vel ab amet iste excepturi magni incidunt eaque.
                 </div>
               </div>
-              <div className="projects-container"> 
+              <div id = "projects" className="projects-container"> 
                 <div className="projects-title">SELECTED WORKS</div>
                 <div className="projects-container-inner">
                   <ProjectsCard {...realEstateWebsite} />
@@ -63,6 +63,7 @@ const App = () => {
                 </div>
               </div>
             </div>
+            <Contact />
           </div>
         </Layout>
       </div>

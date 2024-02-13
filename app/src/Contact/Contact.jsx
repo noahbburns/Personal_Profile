@@ -1,35 +1,53 @@
-import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import "./Contact.css";
+import { BrowserRouter as Router, NavLink } from "react-router-dom";
+import sendIcon from "../assets/send.svg";
 
-export const ContactUs = () => {
+const Contact = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
-      .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
-        publicKey: 'YOUR_PUBLIC_KEY',
-      })
+      .sendForm(
+        "service_qwec9af",
+        "template_k20h0sr",
+        form.current,
+        "5CTcsliWI6CMJMBwO"
+      )
       .then(
-        () => {
-          console.log('SUCCESS!');
+        (result) => {
+          console.log(result.text);
+          console.log("message sent");
         },
         (error) => {
-          console.log('FAILED...', error.text);
-        },
+          console.log(error.text);
+        }
       );
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail}>
-      <label>Name</label>
-      <input type="text" name="user_name" />
-      <label>Email</label>
-      <input type="email" name="user_email" />
-      <label>Message</label>
-      <textarea name="message" />
-      <input type="submit" value="Send" />
-    </form>
+    <div className="contact-container">
+      <h3 className="contact-title">Contact Me</h3>
+      <div className="contact-pair">
+      <p className="contact-text">Contact me directly by email</p>
+        <NavLink className="contact-email">n14burns@gmail.com</NavLink>
+      </div>
+      <br />
+      <p className="contact-text">or by using this form.</p>
+      <form ref={form} onSubmit={sendEmail}>
+        <input placeholder ="Your Name" type="text" name="user_name" />
+        <input placeholder ="Your Email" type="email" name="user_email" />
+        <textarea placeholder="Type your message here." name="message" />
+        <div className="submit" value="Send">
+          Send
+          <img src={sendIcon} className="send-icon" />
+        </div>
+      </form>
+      </div>
   );
 };
+
+export default Contact;

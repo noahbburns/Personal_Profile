@@ -1,0 +1,103 @@
+.contact-container {
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 50vh;
+    font-family: "Roboto-Mono", monospace;
+    margin-top: 8rem;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.contact-title {
+    font-size: 1.875rem;
+    font-weight: 600;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+}
+
+.contact-pair {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.contact-email {
+    text-decoration: none;
+    color: black;
+}
+
+.contact-email:hover {
+    text-decoration: underline;
+}
+
+input,
+textarea {
+    font-family: "Roboto-Mono", monospace;
+    width: 18rem;
+    padding: 1rem;
+    border-radius: 0.8rem;
+    border: 3px solid rgb(233, 210, 179);
+    margin: 1rem;
+    font-size: 0.9rem;
+    outline: none;
+    caret-color: burlywood;
+    background-color: rgb(249, 236, 218);
+}
+
+textarea {
+    min-height: 5rem;
+    resize: vertical;
+    overflow: auto;
+}
+
+input:hover,
+textarea:hover {
+    border: 3px solid burlywood;
+    transition: 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    border: 3px solid burlywood;
+    border-spacing: 10px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: rgb(142, 129, 111);
+}
+
+.submit {
+    width: 18rem;
+    background-color: burlywood;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 0.5rem;
+}
+
+.submit:hover {
+    background-color: rgb(225, 191, 147);
+    transition: 0.3s ease;
+}
+
+.send-icon {
+    width: 1rem;
+}
