@@ -1,0 +1,10 @@
+:root {
+    --background-color: bisque;
+    --hero-text: rgb(12, 13, 14);
+    --hero-name: linear-gradient(45deg, #dc2f02, #e85d04, #f48c06, #faa307, #ffba08);
+    --hero-location: rgb(177, 134, 77);
+    --content-container: rgb(12, 13, 14);
+    --content-title-text: burlywood;
+    --box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+    
+}

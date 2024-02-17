@@ -38,13 +38,10 @@ const Contact = () => {
       <br />
       <p className="contact-text">or by using this form.</p>
       <form ref={form} onSubmit={sendEmail}>
-        <input placeholder ="Your Name" type="text" name="user_name" />
+        <input placeholder ="Your Name" type="text" name="from_name" />
         <input placeholder ="Your Email" type="email" name="user_email" />
         <textarea placeholder="Type your message here." name="message" />
-        <div className="submit" value="Send">
-          Send
-          <img src={sendIcon} className="send-icon" />
-        </div>
+        <input type="submit" className="submit" value="Send"></input>
       </form>
       </div>
   );
