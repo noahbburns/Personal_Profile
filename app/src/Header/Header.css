@@ -11,19 +11,19 @@
 
 
 .header-links {
-  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--box-shadow);
   padding: 1rem;
   border-radius: 2rem;
-  background-color: bisque;
+  background-color: var(--background-color);
   z-index: 99;
-  border: 5px solid black;
+  border: 5px solid var(--container-color);
 }
 
 .link {
     font-size: .9rem;
     text-decoration: none;
     font-weight: 600;
-    color: rgb(172, 136, 87);
+    color: var(--link-color);
     border-bottom: 3px solid transparent;
     margin: 0.5rem;
 }

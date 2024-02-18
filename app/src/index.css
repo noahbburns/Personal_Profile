@@ -1,10 +1,17 @@
 :root {
-    --background-color: bisque;
+    --background-color: #F0ECE5;
     --hero-text: rgb(12, 13, 14);
-    --hero-name: linear-gradient(45deg, #dc2f02, #e85d04, #f48c06, #faa307, #ffba08);
+    --hero-name: linear-gradient(45deg, #439CFB, #6099FB, #0968e5, #091970);
     --hero-location: rgb(177, 134, 77);
-    --content-container: rgb(12, 13, 14);
+    --light-text: #fff;
+    --dark-text: #0d1117; 
+    --container-color: #0d1117;
     --content-title-text: burlywood;
     --box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
-    
+    --container-title: #B6BBC4;
+    --container-text: #fff;
+    --tag-color: #B6BBC4;
+    --input-color: #FCFCFC;
+    --submit-color: #B4B4B8;
+    --link-color: #B6BBC4;
 }
