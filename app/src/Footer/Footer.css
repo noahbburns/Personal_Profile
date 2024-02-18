@@ -1,5 +1,7 @@
 .footer-container {
     width: 100%;
     bottom: 0;
+    background-color: aliceblue;
     position: fixed;
+    min-height: 5rem;
 }

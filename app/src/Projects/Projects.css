@@ -1,0 +1,36 @@
+.projects-container {
+    position: relative;
+    margin: 3rem;
+    justify-content: center;
+    display: grid;
+}
+
+.projects-title {
+    font-size: 7rem;
+    color: var(--container-title);
+    font-weight: 800;
+    z-index: 1;
+}
+
+@media (max-width: 1000px) {
+
+    .projects-title {
+        font-size: 5rem;
+    }
+}
+
+.projects-container-inner {
+    border-radius: 1rem;
+    box-shadow: var(--box-shadow);
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1440px) {
+    
+    .projects-container-inner {
+        flex-wrap: wrap;
+    }
+}
