@@ -20,7 +20,7 @@ const ProjectsCard = ({
           <div className="overlay-text">{projectDescription}</div>
           <div className="overlay-website">
             <img src={websiteIcon} className="website-icon"></img>
-            <NavLink to={projectLink} className="website-link">
+            <NavLink target="_blank" to={projectLink} className="website-link">
               Take a look
             </NavLink>
           </div>
@@ -30,7 +30,7 @@ const ProjectsCard = ({
         <div className="title-link-pair">
           <div className="card-title">{projectTitle}</div>
           <div className="card-links">
-            <NavLink to={projectGitHub}>
+            <NavLink target="_blank" to={projectGitHub}>
               <img src={githubIcon} className="github-link"></img>
             </NavLink>
           </div>

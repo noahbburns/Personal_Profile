@@ -15,10 +15,10 @@ const Layout = () => {
       <main className="landingpage-container">
         <Hero />
         <div className="content-container">
-          <About />
-          <Projects />
+          <About id="about" />
+          <Projects id="projects" />
         </div>
-        <Contact />
+        <Contact id="contact" />
         <Footer />
       </main>
     </div>

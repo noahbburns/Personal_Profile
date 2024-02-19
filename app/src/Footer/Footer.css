@@ -1,7 +1,44 @@
 .footer-container {
-    width: 100%;
-    bottom: 0;
-    background-color: aliceblue;
-    position: fixed;
-    min-height: 5rem;
+  width: 100%;
+  bottom: 0;
+  background-color: var(--container-color);
+  min-height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
 }
+
+.footer-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin-left: 2rem;
+}
+
+.footer-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright {
+  font-weight: 500;
+}
+
+
+.extensions {
+  margin-right: 2rem;
+}
+
+.extension-icon {
+  width: 2rem;
+  height: 2rem;
+  margin: 0.5rem;
+}
+
+.extension:hover {
+  filter: brightness(0.8);
+}
+

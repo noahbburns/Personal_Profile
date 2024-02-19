@@ -1,46 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Righteous&family=Roboto+Mono&family=Varela+Round&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Righteous&family=Roboto+Mono&family=Varela+Round&display=swap");
 
 body::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Inter', sans-serif;
-    background-color: var(--background-color);
+  font-family: "Inter", sans-serif;
+  background-color: var(--background-color);
 }
 
 .landingpage-container {
-    width: 100%;
-    height: 100vh;
-    background-color: var(--background-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-
 .content-container {
-    width: 100%;
-    margin-top: 210rem;
-    position: relative;
-    border-radius: 2rem;
-    background-color: var(--container-color);
-    z-index: 1;
-    box-shadow: var(--box-shadow);
+  width: 100%;
+  margin-top: 210rem;
+  position: relative;
+  border-radius: 2rem;
+  background-color: var(--container-color);
+  z-index: 1;
+  box-shadow: var(--box-shadow);
 }
 
 @media (max-width: 1150px) {
-
-    .content-container {
-        margin-top: 300rem;
-    }
+  .content-container {
+    margin-top: 300rem;
+  }
 }
-
-

@@ -1,16 +1,16 @@
 :root {
-    --background-color: #F0ECE5;
-    --hero-text: rgb(12, 13, 14);
-    --hero-name: linear-gradient(45deg, #439CFB, #6099FB, #0968e5, #091970);
-    --hero-location: rgb(177, 134, 77);
-    --light-text: #fff;
-    --dark-text: #0d1117; 
-    --container-color: #0d1117;
-    --box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
-    --container-title: #B6BBC4;
-    --container-text: #fff;
-    --tag-color: #B6BBC4;
-    --input-color: #FCFCFC;
-    --submit-color: #B4B4B8;
-    --link-color: #B6BBC4;
+  --background-color: #f0ece5;
+  --hero-text: rgb(12, 13, 14);
+  --hero-name: linear-gradient(45deg, #439cfb, #6099fb, #0968e5, #091970);
+  --hero-location: rgb(177, 134, 77);
+  --light-text: #fff;
+  --dark-text: #0d1117;
+  --container-color: #0d1117;
+  --box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+  --container-title: #b6bbc4;
+  --container-text: #fff;
+  --tag-color: #b6bbc4;
+  --input-color: #fcfcfc;
+  --submit-color: #b4b4b8;
+  --link-color: #b6bbc4;
 }
