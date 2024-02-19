@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --background-color: #f0ece5;
   --hero-text: rgb(12, 13, 14);
