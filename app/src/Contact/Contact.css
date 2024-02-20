@@ -12,7 +12,7 @@
 
 @media (max-width: 1024px) {
   .contact-container {
-    margin-bottom: 10rem;
+    height: 100vh;
   }
 }
 
