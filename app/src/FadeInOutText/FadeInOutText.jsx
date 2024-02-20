@@ -9,7 +9,7 @@ const FadeInOutText = ({ text, additionalClass }) => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      const fadeOutThreshold = 400;
+      const fadeOutThreshold = 100;
 
       // Calculate opacity based on scroll position
       const calculatedOpacity = Math.max(0, 1 - (scrollY / fadeOutThreshold));

@@ -1,8 +1,9 @@
 .projects-container {
     position: relative;
     margin: 3rem;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    display: grid;
 }
 
 .projects-title {

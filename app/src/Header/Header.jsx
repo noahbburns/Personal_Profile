@@ -21,7 +21,7 @@ const Header = () => {
   useEffect(() => {
     const handleScroll = _debounce((to) => {
       handleSetActive(to);
-    }, 600); // Adjust the debounce delay as needed
+    }, 650); // Adjust the debounce delay as needed
 
     Events.scrollEvent.register("begin", (to, element) => {
       handleScroll(to);
@@ -41,7 +41,7 @@ const Header = () => {
             to={tab.id}
             spy={true}
             smooth={true}
-            offset={-200}
+            offset={-150}
             duration={1200}
             activeClass="active"
             onSetActive={handleSetActive}
