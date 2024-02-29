@@ -9,7 +9,7 @@ const Projects = () => {
     projectTitle: "Real-Estate Web App",
     projectDescription:
       "A web app to explore available homes to rent or buy, among other functions.",
-    projectTags: ["ReactJS", "NodeJS", "MySQL"],
+    projectTags: ["ReactJS", "Vite", "NodeJS", "MySQL"],
     projectGitHub:
       "https://github.com/CedricLimAhTock/0verdrive-soen341projectF2023",
     projectLink: "",

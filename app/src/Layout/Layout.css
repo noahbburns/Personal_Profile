@@ -35,8 +35,8 @@ body {
   box-shadow: var(--box-shadow);
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1500px) {
   .content-container {
-    margin-top: 300rem;
+    margin-top: 400rem;
   }
 }

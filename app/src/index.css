@@ -1,6 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 :root {
   --background-color: #f0ece5;
@@ -15,6 +12,6 @@
   --container-text: #fff;
   --tag-color: #b6bbc4;
   --input-color: #fcfcfc;
-  --submit-color: #b4b4b8;
+  --submit-color: #0d1117;
   --link-color: #b6bbc4;
 }

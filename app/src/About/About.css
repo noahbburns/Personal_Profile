@@ -1,58 +1,84 @@
 .about-container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    flex: 1;
-}
-
-.about-pair {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .about-title {
-    font-size: 7rem;
-    color: var(--container-title);
-    font-weight: 800;
-    margin: 3rem;
-
-}
-
-.portrait {
-    width: 20rem;
-    border-radius: 1rem;
-    
+  font-size: 7rem;
+  color: var(--container-title);
+  font-weight: 800;
+  margin: 3rem;
 }
 
 .about-description {
-    display: inline-block;
-    max-width: 40rem;
-    font-size: 2.1rem;
-    color: var(--container-text);
-    font-weight: 500;
-    background-color: rgba(0, 0, 0, 0.2);
-    padding: 1rem;
-    border-radius: 1rem;
-    text-align: justify;
-    hyphens: auto;
+  display: flex;
 }
 
-@media (max-width: 1000px) {
-    
-    .about-pair {
-        flex-direction: column;
-    }
+.background {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem;
+  font-size: 1.5rem;
+  color: #fff;
+}
 
-    .about-title {
-        font-size: 5rem;
-    }
+.skills-container {
+  flex: 1;
+  display: flex;
+  justify-content: center; /* Keeps the skill categories centered in the container */
+  color: white;
+  margin: 0;
+  gap: 3rem;
+}
 
-    .about-description {
-        margin: 1rem;
-    }
+.skill-category {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
 
+.skill-category-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.skill-category-item:hover {
+  text-decoration: underline;
+}
+
+.skill-image {
+  width: 1rem;
+}
+
+.skill-category-label {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.skill-category ul {
+  list-style-type: none;
+}
+
+.skill-category ul li {
+  padding: 0.2rem;
+  font-weight: 300;
+}
+
+@media (max-width: 1024px) {
+  .about-title {
+    font-size: 5rem;
+  }
+
+  .about-description {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }

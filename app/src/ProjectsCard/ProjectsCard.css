@@ -10,7 +10,7 @@
 
 .img-container {
     position: relative;
-    background-image: url(https://images.wallpapersden.com/image/download/abstract-wave-grey-duotone_bmdmaWmUmZqaraWkpJRnamtlrWZpaGo.jpg);
+    background-image: url(../assets/wave.jpg);
     border-radius: 1rem;
     display: flex;
     align-items: center;
