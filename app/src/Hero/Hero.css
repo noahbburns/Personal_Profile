@@ -11,7 +11,6 @@
 .hero-text {
   font-size: 5rem;
   font-weight: 700;
-  margin-left: -15rem;
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
   color: var(--dark-text);
@@ -20,7 +19,6 @@
 .hero-name {
   font-size: 5rem;
   font-weight: 700;
-  margin-right: -13rem;
   background-clip: text;
   color: transparent;
   background-image: var(--hero-name);
@@ -30,12 +28,24 @@
   transition: opacity 0.5s ease-in-out;
 }
 
-@media (max-width: 1000px) {
+@media screen and (max-width: 768px) {
   .hero-text,
   .hero-name {
-    font-size: 4rem; /* Adjust the font size for smaller screens */
+    font-size: 2rem; /* Adjust the font size for smaller screens */
     margin-left: -10vw; /* Adjust the margin for smaller screens */
     margin-right: -8vw; /* Adjust the margin for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-text,
+  .hero-name {
+    font-size: 2rem; /* Adjust the font size for smaller screens */
+  }
+
+  .hero-location,
+  .hero-small-about {
+    font-size: 0.6rem; /* Adjust the font size for smaller screens */
   }
 }
 
@@ -77,4 +87,3 @@
   margin-top: 2rem;
   color: var(--link-color);
 }
-

@@ -1,17 +1,23 @@
 .about-container {
   display: flex;
   flex-direction: column;
+  padding: 2rem;
+  width: 100%;
 }
 
 .about-title {
-  font-size: 7rem;
+  font-size: clamp(3rem, 10vw, 7rem);
   color: var(--container-title);
   font-weight: 800;
-  margin: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 .about-description {
   display: flex;
+  gap: 2rem;
+  
+
 }
 
 .background {
@@ -20,24 +26,25 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 3rem;
-  font-size: 1.5rem;
+  padding: 1rem;
+  font-size: clamp(1rem, 2vw, 1.5rem);
   color: #fff;
+  text-align: justify;
 }
 
 .skills-container {
   flex: 1;
   display: flex;
-  justify-content: center; /* Keeps the skill categories centered in the container */
+  flex-wrap: wrap;
+  justify-content: space-around;
   color: white;
-  margin: 0;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .skill-category {
   display: flex;
   flex-direction: column;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .skill-category-item {
@@ -62,6 +69,7 @@
 
 .skill-category ul {
   list-style-type: none;
+  padding-left: 0;
 }
 
 .skill-category ul li {
@@ -69,16 +77,73 @@
   font-weight: 300;
 }
 
-@media (max-width: 1024px) {
-  .about-title {
-    font-size: 5rem;
-  }
+@media screen and (max-width: 1024px) {
 
-  .about-description {
-    margin: 1rem;
-    display: flex;
-    flex-direction: column;
+  .about-container {
     justify-content: center;
     align-items: center;
+  }
+
+  .about-title {
+    font-size: clamp(2rem, 5vw, 5rem);
+  }
+  .about-description {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-container {
+    padding: 1rem;
+  }
+
+  .about-title {
+    margin-bottom: 1.5rem;
+  }
+
+  .background {
+    text-align: center;
+  }
+
+  .skills-container {
+    justify-content: space-between;
+  }
+
+  .skill-category {
+    width: calc(50% - 1rem);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-container {
+    padding: 0.5rem;
+    
+   
+  }
+
+  .about-title {
+    margin-bottom: 1rem;
+  }
+
+  .background {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  .skills-container {
+    flex-direction: column;
+  }
+
+
+  .skill-category-label {
+    font-size: 0.9rem;
+  }
+
+  .skill-category ul li {
+    font-size: 0.8rem;
+  }
+
+  .skill-image {
+    width: 0.8rem;
   }
 }
